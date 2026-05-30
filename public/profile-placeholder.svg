@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Profile photo placeholder</title>
+  <desc id="desc">Initials JW in a minimal academic portrait frame.</desc>
+  <rect width="800" height="1000" fill="#f8fafc"/>
+  <rect x="28" y="28" width="744" height="944" rx="28" fill="#ffffff" stroke="#d9e2ec" stroke-width="4"/>
+  <circle cx="400" cy="318" r="122" fill="#ccfbf1"/>
+  <path d="M235 768c22-142 91-213 165-213s143 71 165 213" fill="#e0f2fe"/>
+  <path d="M292 768c16-92 57-138 108-138s92 46 108 138" fill="#fef3c7"/>
+  <text x="400" y="348" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="112" font-weight="700" fill="#0f766e">JW</text>
+  <path d="M180 840h440" stroke="#d9e2ec" stroke-width="8" stroke-linecap="round"/>
+  <path d="M260 888h280" stroke="#d9e2ec" stroke-width="8" stroke-linecap="round"/>
+</svg>
