@@ -18,7 +18,7 @@ export default function ContactPage() {
           title="Get in touch"
           description={`The best contact method is email: ${profile.email}.`}
         />
-        <div className="mt-12 max-w-4xl">
+        <div className="mt-12 max-w-5xl">
           <ContactBlock />
         </div>
       </Container>
