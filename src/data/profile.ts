@@ -33,6 +33,7 @@ export type Profile = {
   title: string;
   affiliation: string;
   supervisor: string;
+  supervisorUrl: string;
   location: string;
   email: string;
   websiteUrl: string;
@@ -51,6 +52,7 @@ export const profile: Profile = {
   title: "PhD Student in Mathematics",
   affiliation: "University of Ottawa",
   supervisor: "Prof. Raluca Balan",
+  supervisorUrl: "https://uniweb.uottawa.ca/sites/Raluca-Balan",
   location: "Ottawa, Canada",
   email: "jwang023@uottawa.ca",
   websiteUrl: "https://your-domain.example",
@@ -67,7 +69,7 @@ export const profile: Profile = {
     { label: "Contact", href: "/contact" },
   ],
   highlights: [
-    { value: "1", label: "Preprint" },
+    { value: "2", label: "Preprints" },
     { value: "SPDEs", label: "Current focus" },
     { value: "2025 Fall", label: "PhD started" },
   ],
@@ -90,6 +92,24 @@ export const profile: Profile = {
   ],
   publications: [
     {
+      title: "Gaussian fluctuations for the parabolic Anderson model with Lévy white noise",
+      authors: ["Raluca M. Balan", "Matis Le Gall", "Jinxin Wang"],
+      venue: "arXiv preprint",
+      year: "2026",
+      type: "preprint",
+      status: "Preprint",
+      keywords: [
+        "Parabolic Anderson model",
+        "Lévy white noise",
+        "Gaussian fluctuations",
+        "Functional limit theorem",
+      ],
+      bibtexKey: "BLW26",
+      arxivId: "2607.02742",
+      url: "https://arxiv.org/abs/2607.02742",
+      doi: "10.48550/arXiv.2607.02742",
+    },
+    {
       title: "SPDEs with time-independent Lévy colored noise",
       authors: ["Raluca M. Balan", "Jinxin Wang"],
       venue: "arXiv preprint",
@@ -97,7 +117,7 @@ export const profile: Profile = {
       type: "preprint",
       status: "Preprint",
       keywords: ["SPDEs", "Lévy colored noise", "Malliavin calculus"],
-      bibtexKey: "balan2026spdes-levy-colored-noise",
+      bibtexKey: "BW26",
       arxivId: "2604.24914",
       url: "https://arxiv.org/abs/2604.24914",
       doi: "10.48550/arXiv.2604.24914",

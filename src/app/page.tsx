@@ -6,6 +6,10 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { profile } from "@/data/profile";
 
 export default function HomePage() {
+  const [summaryBeforeSupervisor, summaryAfterSupervisor] = profile.summary.split(
+    profile.supervisor,
+  );
+
   return (
     <>
       <section className="border-b border-line bg-paper">
@@ -22,7 +26,16 @@ export default function HomePage() {
                 {profile.title}
               </p>
               <p className="mt-6 max-w-3xl text-base leading-8 text-muted">
-                {profile.summary}
+                {summaryBeforeSupervisor}
+                <a
+                  href={profile.supervisorUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-signal underline-offset-4 hover:underline"
+                >
+                  {profile.supervisor}
+                </a>
+                {summaryAfterSupervisor}
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
